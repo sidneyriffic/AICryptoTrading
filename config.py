@@ -1,5 +1,5 @@
 # Which colums to use as input for the nerual network
-columns = ['Close','Volume','Low','High']
+columns = ['Close', 'Volume', 'High', 'Low']
 
 # Which currency pair are we interested in predicting
 pair = 'BTC_ETH' # or 'USDT_BTC'
@@ -7,7 +7,7 @@ pair = 'BTC_ETH' # or 'USDT_BTC'
 CONFIG = {
     'pair': pair,
     'period': 300,
-    'input_size': 30,
+    'input_size': 48,
     'output_size': 12,
     'lstm_hidden_size': 50,
     'columns' : columns,
